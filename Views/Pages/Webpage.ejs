@@ -8,7 +8,7 @@
     <%- include('../Partials/Header'); %>
 
     <div class="container">
-        <aside>
+        <aside class="animate-up">
             <section class="item ">Entre em Contato!</section>
             <section> 
                 Endereço: 
@@ -31,8 +31,27 @@
                 Sábados de 08 às 12hrs.
             </section>
         </aside>
-        <main> </main>
+        <main>
+            <div id="mapid" class="animate-appear"></div>
+            
+            <div class="orphanages">
+                
+                  <span hidden
+                    data-id="{{this.id}}"
+                    data-name="{{this.name}}"
+                    data-lat="{{this.lat}}"
+                    data-lng="{{this.lng}}"
+                  ></span>
+                
+                
+              </div>
+          
+              
+              </a>
+        </main>
     </div>
+
+    <script src="../scripts/pageMap.js"></script>
 
     <%- include('../Partials/Footer'); %>
     

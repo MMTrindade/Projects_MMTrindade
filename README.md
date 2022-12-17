@@ -1,0 +1,1 @@
+In order to run the file, type "Node server.js" on your terminal, and "Localhost:8080"on your browser.
