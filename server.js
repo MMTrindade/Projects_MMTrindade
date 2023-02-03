@@ -5,14 +5,14 @@ app.set ("view engine", "ejs");
 
 app.get("/", function(req, res) {
 
-    res.render("Pages/Webpage");
+    res.render("Pages/Home");
 })
 
 app.use( express.static( "Views" ) );
 
-app.get("/NossaHistoria", function(req, res) {
+app.get("/Sobre", function(req, res) {
 
-    res.render("Pages/NossaHistoria");
+    res.render("Pages/Sobre");
 })
 
 app.get("/Servicos", function(req, res) {
@@ -22,8 +22,9 @@ app.get("/Servicos", function(req, res) {
 
 app.get("/Contato", function(req, res) {
 
-    res.render("Pages/Contato");
+    res.render("Pages/Webpage");
 })
+
 
 app.listen(8080);
 console.log("Rodando")
