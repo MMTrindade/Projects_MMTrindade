@@ -57,7 +57,7 @@
                 font-style: normal;
         }
         * {
-            margin: .08rem;
+            margin: .0rem;
             box-sizing: border-box;
         }
 
@@ -80,18 +80,39 @@
             flex:1;
         }
 
-        header nav a {
+        .logo{ 
             display: flex;
-            size: 2rem;
+            /*size: 2rem;*/
             flex: .8;
             align-items: center;
+            justify-items: center;
             margin-left: 6.5rem;
+            height: auto;
+            
+            
+        }
+        .logo a {
+            align-items: center;
+            justify-content: center;
+        }
+            
+        
+        header nav a img{
+            display: flex;
+            /*size: 2rem;*/
+            max-width: 100%;
+            max-height: 100%;
+            width:auto;
+            height: 11.7vh;
+            align-items: center;
+            justify-content: center;
+            
         }
 
         header nav p {
             color: rgb(249, 250, 252);
             font-family: 'BlueRiver', Times, serif;
-            font-size: 19px;
+            font-size: 1.5vw;
             display: flex;
             flex: 2;
             align-items: center;
@@ -99,6 +120,7 @@
             margin-left: 10rem;
             width: 100px;
             margin-right: -4rem;
+            white-space: nowrap;
         }
 
         header nav ul  {
@@ -118,9 +140,9 @@
         ul li a{
             color: rgb(249, 250, 252);
             font-family: copperplate, serif;
-            font-size: .9rem;
+            font-size: 1vw;
             /*justify-content: space-between;*/
-            padding: 1rem;
+            padding: 1vw;
             background-color: rgb(37, 37, 39)aqua;
             border: .1rem solid white;
             text-decoration:none;
@@ -506,14 +528,46 @@
             }
         }
 
-        .content {
-            text-align: center;
+        @font-face {
+                font-family: 'Roboto' ;
+                src: url('/Partials/Roboto-Regular.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
         }
-        .content h1 {
-            font-size: 46px;
-            font-family: Helvetica;
+        .HomeContent {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            font-family: 'Roboto', sans-serif;
             color: white;
+            align-items: center;
+        }
+        .HomeTitle {
+            font-size: 48px;
+            font-style: bold;
             font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .HomeSubTitle {
+            font-size: 25px;
+            font-style:oblique;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        #SaibaMais {
+            width: 11%;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            background-color: transparent;
+            font-size: 20px;
+            padding: 0.6rem;
+            border: .06rem solid white;
+            white-space: nowrap;
+            
         }
 
             </style>
